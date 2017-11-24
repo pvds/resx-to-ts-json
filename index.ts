@@ -115,7 +115,7 @@ function parseToDictionaryItem(key: string, value: string, dictionary: Dictionar
         return;
     }
 
-    let nestedKeyIndex = key.indexOf("_");
+    let nestedKeyIndex = key.indexOf(".");
 
     if (nestedKeyIndex >= 0) {
         let firstKey = key.substring(0, nestedKeyIndex);
